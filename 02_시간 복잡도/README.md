@@ -11,7 +11,7 @@ $$f(n) = 4n^2+4n+1$$
 $$O(n^2)$$  
 
 시간복잡도 크기 비교  
-O(1) < O(logn) < O(n) < O(nlogn) < O(n²) < O(2ⁿ) <ㅠ O(n!)
+O(1) < O(logn) < O(n) < O(nlogn) < O(n²) < O(2ⁿ) < O(n!)
 
 ## 시간 복잡도 선택 시 참고할 만한 사항
 ### 최대 시간이 1초일 때 입력 데이터 수에 따른 시간 복잡도
@@ -41,8 +41,8 @@ input = sys.stdin.readline
 data1 = [0] * 1000
 data2 = [[0] * 100 for _ in range(100)]
 ```
-### 문자열 합치기 : ".join()을 쓰고 +는 사용하지 말자
-+는 각각의 문자열을 새로운 메모리에 복사하여 새 문자열을 만들기 때문에 시간 복잡도 가 O(n²)이다.
+### 문자열 합치기 : ".join()"을 쓰고 +는 사용하지 말자
++는 각각의 문자열을 새로운 메모리에 복사하여 새 문자열을 만들기 때문에 시간 복잡도가 O(n²)이다.
 ### 조건문 연산 줄이기 : 짧은 것부터 먼저 계산하자
 여러 if를 거치지 않도록 코드 구성하기
 ### 슬라이싱 : 불필요한 연산을 최소로
@@ -55,7 +55,7 @@ a[start:end:step]
 [더 많은..](https://docs.python.org/ko/3/library/math.html)
 ```python
     from math import gcd
-    from math import lcm -> 지원 안되는 버전도 있음
+    from math import lcm # 지원 안되는 버전도 있음
 
     lcm(a, b) #최대공배수
     gcd(a, b) #최대공약수
