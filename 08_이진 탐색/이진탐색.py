@@ -13,8 +13,8 @@ def binary_search(array, target, start, end):
     else:
         return binary_search(array, target, mid+1, end)
     
-array = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-result = binary_search(array, 7, 0, len(array)-1)
+array = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+result = binary_search(array, 6, 0, len(array)-1)
 if result == None:
     print("원소가 존재하지 않습니다.")
 else:

@@ -10,3 +10,4 @@ def solution(s):
         s = str(bin(len(s))[2:])
     
     return [number, zeros]
+

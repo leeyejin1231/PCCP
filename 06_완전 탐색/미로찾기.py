@@ -13,11 +13,11 @@ queue = deque()
 queue.append((0, 0))
 
 while queue:
-    x, y = queue.pop()
+    x, y = queue.popleft()
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
-        if 0 <= nx < m and 0 <= ny < n and miro[ny][nx] != 0:
+        if 0 <= nx < m and 0 <= ny < n and miro[ny][nx] == 1:
             miro[ny][nx] = miro[y][x] + 1
             queue.append((nx, ny))
 

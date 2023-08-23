@@ -1,9 +1,9 @@
 from itertools import combinations
-def solution(numbers):
-    answer = set()
-    selects = list(combinations(numbers, 2))
-    for select in selects:
-        (a, b) = select
-        answer.add(a + b)
 
+def solution(numbers):
+    answer = []
+    combi = list(combinations(numbers, 2))
+    answer = [a+b for a, b in combi]
+    answer = list(set(answer))
+    
     return sorted(answer)

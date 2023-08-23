@@ -21,3 +21,4 @@ def solution(n):
                 y += dy[angle]
                 
     return [i for j in result for i in j]
+

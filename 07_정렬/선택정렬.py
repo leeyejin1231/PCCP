@@ -12,3 +12,4 @@ def selection_sort(data):
 
 selection_sort(sample)
 print(sample)
+
